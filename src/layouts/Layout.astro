@@ -4,13 +4,15 @@
 
 <!doctype html>
 <html lang="en">
-  <body class=`xl:flex mx-auto my-10 px-10 block`>
+  <body class=`lg:flex mx-auto lg:my-20 lg:px-10 block container px-2`>
     <!-- <MiniSideBar /> -->
     <!-- <MiniSideBar />
     <Developer />
     <slot /> -->
+
+    <!-- Nav -->
     <div
-      class="bg-gray-500 xl:min-w-20 flex xl:flex-col xl:gap-10 items-center py-10 navigaton h-20 xl:h-auto pl-10 xl:px-0 gap-5"
+      class="bg-gray-500 lg:min-w-20 flex lg:flex-col lg:gap-10 items-center py-10 navigaton h-20 lg:h-auto pl-10 lg:px-0 gap-5"
     >
       <div class="w-10 h-10 bg-red-100"></div>
       <div class="w-10 h-10 bg-red-100"></div>
@@ -21,30 +23,14 @@
       <div class="w-10 h-10 bg-red-100"></div>
     </div>
 
-    <div class="bg-gray-600 grow flex flex-col justify-center">
+    <!-- Dev -->
+    <div class="bg-gray-600 grow flex flex-col justify-center h-[46rem]">
       <div class="bg-red-200 w-full h-1/3"></div>
       <div class="bg-blue-200 w-full h-1/3"></div>
       <div class="bg-green-200 w-full h-1/3"></div>
-      <!-- <div>
-        <div class="bg-red-300 w-40 h-40 rounded-full ring-2"></div>
-
-        <div
-          class="flex gap-10 ring-2 ring-yellow-500 w-fit h-fit justify-center items-center"
-        >
-          <div class="w-10 h-10 bg-red-100"></div>
-          <div class="w-10 h-10 bg-red-100"></div>
-          <div class="w-10 h-10 bg-red-100"></div>
-          <div class="w-10 h-10 bg-red-100"></div>
-        </div>
-
-        <div class="flex bg-red-300">
-          <div class="w-10 h-10 bg-red-100"></div>
-          <div class="w-10 h-10 bg-red-100"></div>
-        </div>
-      </div> -->
     </div>
 
-    <div class="bg-gray-800 grow">c</div>
+    <div class="bg-gray-800 grow h-[46rem]">c</div>
   </body>
 </html>
 
@@ -53,24 +39,24 @@
     font-family: system-ui, sans-serif;
   }
   body {
-	animation: upfade 0.8s ease-in;
+    animation: upfade 0.8s ease-in;
   }
 
   @keyframes upfade {
     from {
-		transform: translateY(10px);
+      transform: translateY(10px);
       opacity: 0.5;
     }
   }
 
   @keyframes upfade2 {
     from {
-		transform: translateY(5px);
+      transform: translateY(5px);
       opacity: 0.5;
     }
   }
 
-  .navigaton{
-	animation: upfade2 0.5s ease;
+  .navigaton {
+    animation: upfade2 0.5s ease;
   }
 </style>
