@@ -1,0 +1,14 @@
+---
+interface ServiceType {
+  logo: string;
+  title: string;
+  description: string;
+}
+
+const { title, description, logo } = Astro.props as ServiceType;
+---
+
+<div>
+  Service
+  <p>{title}</p>
+</div>
